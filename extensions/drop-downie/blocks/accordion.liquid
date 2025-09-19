@@ -1,0 +1,27 @@
+{{ 'dropdownie.css' | asset_url | stylesheet_tag }}
+
+<details class="accordie-app">
+    <summary>{{ block.settings.title }}</summary>
+    <p>{{ block.settings.content }}</p>
+</details>
+
+{% schema %}
+{
+  "name": "Accordion",
+  "target": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Accordion Title"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>This is the content of the accordion.</p>"
+    }
+  ]
+}
+{% endschema %}

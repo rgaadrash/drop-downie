@@ -1,0 +1,29 @@
+.floating-icon {
+  position: fixed;
+  bottom: var(--icon-vertical-position, 0);
+  left: auto;
+  right: var(--icon-horizontal-position, 0);
+  z-index: 1000;
+  background-color: var(--icon-bg-color, #ffffff);
+  border-radius: 50%;
+  width: var(--icon-size, 50px);
+  display: flex;
+}
+.floating-icon img {
+  width: 100%;
+  height: auto;
+}
+.icon-left {
+  left: var(--icon-horizontal-position, 0);
+  right: auto;
+}
+#scroll-top {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease-in-out;
+}
+#scroll-top.visible {
+  opacity: 1;
+  visibility: visible;  
+  transition: opacity 0.3s ease-in-out;
+}
