@@ -2,7 +2,7 @@
 
 client_id = "d22d198cb517502491a8c3cf646a6d8d"
 name = "drop-downie"
-application_url = "https://example.com/"
+application_url = "https://drop-downie.vercel.app/"
 embedded = true
 handle = "drop-downie"
 
@@ -26,7 +26,7 @@ api_version = "2025-07"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [ "https://drop-downie.vercel.app/auth/callback" ]
 
 [pos]
 embedded = false
